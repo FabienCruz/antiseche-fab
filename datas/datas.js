@@ -17,3 +17,6 @@ const datas = [
 ];
 
 export {datas};
+
+// --------
+// mettre dans un fichier json ?
