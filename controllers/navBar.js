@@ -3,6 +3,7 @@ function categories(arr){
       (prev, curr) => (prev.includes(curr.theme) ? prev : prev.concat(curr.theme)),
       []
     );
+    // utiliser catList = new Set(arr);
     return catList;
 }
 
@@ -15,7 +16,7 @@ function createBtn(txt){
 
 function createNavBar(datas){
   const btnNames = categories(datas);
-  btnNames.forEach(bt => createBtn(bt))
+  btnNames.forEach(bt => createBtn(bt)); // si new Set, utiliser for ... of
 }
 
 export default createNavBar;
